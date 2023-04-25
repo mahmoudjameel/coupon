@@ -33,7 +33,7 @@ export default function Register(props) {
         checkUserApi(email).then(data => {
               setLoading(false);
               setLogged(true);
-              props.navigation.navigate('login');
+              props.navigation.navigate('home');
         });
 
         }else if(response === 'exist'){
